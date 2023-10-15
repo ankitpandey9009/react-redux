@@ -1,38 +1,64 @@
-.App {
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity_minus,
+.quantity_plus {
+  cursor: pointer;
+  background-color: rgb(214, 212, 109);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity_minus:hover,
+.quantity_plus:hover {
+  background-color: #ff473b;
+}
+
+.quantity_input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  background-color: rgb(223, 204, 251);
+  border-radius: 5px;
+  margin: 0 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.quantity_input:focus {
+  border-color: #4caf50;
+}
+
+
+h1{
+  color: blueviolet;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  color: brown;
+  text-align: center;
+}
+ body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(188, 163, 127); /* Replace this with your desired background color */
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
